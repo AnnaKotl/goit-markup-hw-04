@@ -365,9 +365,6 @@ body {
   display: flex;
   gap: 16px;
 }
-.sociak-media-item {
-  
-}
 .sociak-media-link {
   display: flex;
   text-decoration: none;
@@ -386,11 +383,10 @@ body {
 }
 .sociak-media-link:is(:hover, :focus) {
   background-color: var(--succes-color);
+}
 
 /* PORTFOLIO.HTML */
-
 /* Button filter */
-
 .finger {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -420,6 +416,9 @@ body {
 .finger-btn:focus {
   color: var(--white-color);
   background-color: var(--pressed-state-color);
+  /* ???????????????????????????????????????????? */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Catalog with images */
@@ -434,9 +433,15 @@ body {
 .catalog-item {
   width: calc((100% - 48px) / 3);
 }
-/* .catalog-link:is(:hover, :focus) {
+.catalog-link {
+  display: block;
+  text-decoration-line: none;
+  text-decoration: none;
+}
+/* ?????????????????????????????????????????????????????? */
+.catalog-link:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
+}
 .catalog-group {
   padding: 32px 0 32px 16px;
   border-right: 1px solid var(--accent-color);
