@@ -1,27 +1,20 @@
 :root {
   /* Iris */
   --primary-brand-color: #4d5ae5;
-
   /* hover efect */
   --pressed-state-color: #404bbf;
-
   --darc-color: #2e2f42;
   --succes-color: #31d0aa;
   --text-color: #434455;
   --subtle-text-color: #8e8f99;
   /* CORNFLOWER */
   --accent-color: #e7e9fc;
-
   /* CLOUD */
   --light-color: #f4f4fd;
-
   /* Navi blue */
   --hero-background-color: #2e2f42;
-
   --white-color: #ffffff;
-
   /* Fonts */
-
   --primari-font: 'Roboto', sans-serif;
   --secondari-font: 'Raleway', sans-serif;
 }
@@ -141,7 +134,7 @@ body {
     url(../images/hero-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   max-width: 1440px;
 }
 .container-hero {
