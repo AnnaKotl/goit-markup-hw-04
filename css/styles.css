@@ -67,6 +67,7 @@ body {
 
 .navigation-header {
   border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -134,8 +135,10 @@ body {
     url(../images/hero-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: cover; */
+  background-size: cover;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container-hero {
   max-width: 496px;
@@ -185,11 +188,12 @@ body {
   display: flex;
   gap: 24px;
 }
-.specialty-icon {
+.specialty-icons {
   background-color: var(--light-color);
   padding: 24px 100px;
-  max-width: 264px;
-  max-height: 112px;
+  width: 264px;
+  height: 112px;
+
 }
 .subtitle {
   font-weight: 500;
@@ -300,6 +304,9 @@ body {
   gap: 24px;
   width: 100%;
 }
+.customers-item {
+  flex-basis: calc((100% - 120px) / 6);
+}
 .customers-link {
   display: flex;
   justify-content: center;
@@ -322,12 +329,18 @@ body {
 
 /* Footer */
 .footer {
-  display: flex;
   background-color: var(--hero-background-color);
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 .footer-container {
-  margin: 0 120px 0 156px;
+  margin-right: 120px;
 }
 .footer-logo {
   font-family: var(--secondari-font);
@@ -348,6 +361,9 @@ body {
 }
 
 /* Social media */
+.social-media-container {
+  margin-right: auto;
+}
 .social-media-title {
   color: var(--white-color);
   margin-bottom: 16px;
@@ -371,8 +387,6 @@ body {
 }
 .sociak-media-icon {
   fill: currentColor;
-  width: 24px;
-  height: 24px;
 }
 .sociak-media-link:is(:hover, :focus) {
   background-color: var(--succes-color);
@@ -412,6 +426,7 @@ body {
   /* ???????????????????????????????????????????? */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border-color: var(--pressed-state-color);
 }
 
 /* Catalog with images */
@@ -430,6 +445,8 @@ body {
   display: block;
   text-decoration-line: none;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 /* ?????????????????????????????????????????????????????? */
 .catalog-link:is(:hover, :focus) {
